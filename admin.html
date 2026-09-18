@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Sourabh Sinha</title><link rel="stylesheet" href="styles.css"></head>
+<body class="admin-body">
+<div id="loginView" class="admin-login"><div class="admin-card"><div class="eyebrow">PRIVATE AREA</div><h1>Admin login.</h1><p>Manage the public portfolio content.</p><form id="loginForm"><label>Admin ID<input id="adminId" autocomplete="username" required></label><label>Password<input id="adminPass" type="password" autocomplete="current-password" required></label><button class="btn primary" type="submit">Sign in</button><p id="loginMsg" class="form-msg"></p></form><a class="text-link" href="index.html">← Back to site</a></div></div>
+<div id="dashboard" class="dashboard hidden"><header class="admin-top"><a class="brand" href="index.html">SOURABH<span>SINHA</span></a><div><span id="saveState">Saved locally</span><button id="logoutBtn" class="btn secondary">Log out</button></div></header>
+<main class="admin-main"><div class="admin-heading"><div><div class="eyebrow">CONTENT MANAGEMENT</div><h1>Dashboard</h1></div><a class="btn primary" href="index.html">View public site ↗</a></div>
+<section class="editor-card"><h2>About & contact</h2><label>Bio<textarea id="bioEdit"></textarea></label><div class="two"><label>Email<input id="emailEdit"></label><label>Discord URL<input id="discordEdit" placeholder="https://discord.com/..."></label></div><label>X / Twitter URL<input id="xEdit" placeholder="https://x.com/..."></label></section>
+<section class="editor-card"><h2>Services</h2><div id="servicesEdit"></div><button id="addService" class="btn secondary">+ Add service</button></section>
+<section class="editor-card"><h2>Featured work</h2><div id="worksEdit"></div><button id="addWork" class="btn secondary">+ Add project</button></section>
+<button id="saveBtn" class="btn primary save-all">Save all changes</button><p id="dashboardMsg" class="form-msg"></p></main></div>
+<script src="admin.js"></script></body></html>
